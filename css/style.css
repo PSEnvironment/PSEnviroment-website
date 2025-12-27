@@ -141,50 +141,6 @@ img {
     font-size: 0.85rem;
 }
 
-/* ===== NAVBAR TRANSPARENTE SUR HERO ===== */
-/* ===== HEADER TRANSPARENT SUR HERO ===== */
-
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: transparent;
-    box-shadow: none;
-    z-index: 1000;
-}
-
-nav {
-    height: 90px;
-}
-
-.nav-links a {
-    color: #ffffff;
-}
-
-.nav-links a:not(.btn)::after {
-    background-color: var(--accent-color);
-}
-
-.logo {
-    color: #ffffff;
-}
-
-.logo span {
-    color: rgba(255,255,255,0.75);
-}
-
-/* Bouton devis dans la navbar */
-.nav-links .btn {
-    background: transparent;
-    border: 2px solid #ffffff;
-    color: #ffffff;
-}
-
-.nav-links .btn:hover {
-    background: #ffffff;
-    color: var(--primary-color);
-}
 
 /* Hero Section */
 .hero-image {
@@ -540,10 +496,6 @@ footer {
     .nav-links.active {
         display: flex;
     }
-
-    .hamburger {
-        display: block;
-    }
     
     .hero-content h1 {
         font-size: 2rem;
@@ -711,60 +663,55 @@ img,
 .service-img img {
     border-radius: 0 !important;
 }
-/* ===== HEADER TRANSPARENT SUR HERO ===== */
+/* ===== HERO NAV (LIENS SANS NAVBAR) ===== */
 
-header {
+.hero-nav {
     position: absolute;
-    top: 0;
+    top: 30px;
+    left: 8%;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    z-index: 10;
+}
+
+.hero-nav a {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.hero-nav a::after {
+    content: '';
+    position: absolute;
     left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.hero-nav a:hover::after,
+.hero-nav a.active::after {
     width: 100%;
-    background: transparent;
-    box-shadow: none;
-    z-index: 1000;
 }
 
-nav {
-    height: 90px;
-}
-
-.nav-links a {
-    color: #ffffff;
-}
-
-.nav-links a:not(.btn)::after {
-    background-color: var(--accent-color);
-}
-
-.logo {
-    color: #ffffff;
-}
-
-.logo span {
-    color: rgba(255,255,255,0.75);
-}
-
-/* Bouton devis dans la navbar */
-.nav-links .btn {
-    background: transparent;
+/* Bouton devis */
+.hero-btn {
     border: 2px solid #ffffff;
-    color: #ffffff;
+    padding: 8px 18px;
 }
 
-.nav-links .btn:hover {
+.hero-btn:hover {
     background: #ffffff;
     color: var(--primary-color);
 }
 @media (max-width: 768px) {
-    header {
-        background: rgba(0,0,0,0.85);
-        position: fixed;
-    }
-
-    .nav-links {
-        background: #000;
-    }
-
-    .nav-links a {
-        color: #fff;
+    .hero-nav {
+        flex-wrap: wrap;
+        gap: 1rem;
     }
 }
