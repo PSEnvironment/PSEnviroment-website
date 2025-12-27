@@ -673,3 +673,6 @@ img,
 .hero-links a:hover {
     opacity: 0.8;
 }
+.hero-overlay {
+    background: rgba(0,0,0,0.4);
+}
