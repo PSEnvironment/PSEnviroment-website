@@ -715,3 +715,51 @@ img,
         gap: 1rem;
     }
 }
+.hero-image {
+    position: relative;
+    height: 100vh;
+    background: url("../images/hero-bg.jpg") center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+/* Liens en haut sur l'image */
+.hero-top-links {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: flex;
+    gap: 25px;
+    z-index: 2;
+}
+
+.hero-top-links a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.btn-hero {
+    border: 2px solid #fff;
+    padding: 6px 14px;
+}
+
+/* Contenu principal */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    color: #fff;
+}
+
+.hero-content h1 {
+    color: #fff;
+    font-size: 3.2rem;
+}
