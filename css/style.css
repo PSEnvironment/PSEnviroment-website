@@ -142,6 +142,8 @@ img {
 }
 
 /* ===== NAVBAR TRANSPARENTE SUR HERO ===== */
+/* ===== HEADER TRANSPARENT SUR HERO ===== */
+
 header {
     position: absolute;
     top: 0;
@@ -149,30 +151,39 @@ header {
     width: 100%;
     background: transparent;
     box-shadow: none;
-    z-index: 10;
+    z-index: 1000;
 }
 
 nav {
     height: 90px;
 }
 
-/* Liens blancs sur hero */
-.nav-links a,
-.logo,
-.logo span {
+.nav-links a {
     color: #ffffff;
 }
 
-/* Bouton devis */
+.nav-links a:not(.btn)::after {
+    background-color: var(--accent-color);
+}
+
+.logo {
+    color: #ffffff;
+}
+
+.logo span {
+    color: rgba(255,255,255,0.75);
+}
+
+/* Bouton devis dans la navbar */
 .nav-links .btn {
     background: transparent;
     border: 2px solid #ffffff;
     color: #ffffff;
 }
 
-/* Hover */
-.nav-links a:hover {
-    color: var(--accent-color);
+.nav-links .btn:hover {
+    background: #ffffff;
+    color: var(--primary-color);
 }
 
 /* Hero Section */
@@ -700,4 +711,60 @@ img,
 .service-img img {
     border-radius: 0 !important;
 }
+/* ===== HEADER TRANSPARENT SUR HERO ===== */
 
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    z-index: 1000;
+}
+
+nav {
+    height: 90px;
+}
+
+.nav-links a {
+    color: #ffffff;
+}
+
+.nav-links a:not(.btn)::after {
+    background-color: var(--accent-color);
+}
+
+.logo {
+    color: #ffffff;
+}
+
+.logo span {
+    color: rgba(255,255,255,0.75);
+}
+
+/* Bouton devis dans la navbar */
+.nav-links .btn {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.nav-links .btn:hover {
+    background: #ffffff;
+    color: var(--primary-color);
+}
+@media (max-width: 768px) {
+    header {
+        background: rgba(0,0,0,0.85);
+        position: fixed;
+    }
+
+    .nav-links {
+        background: #000;
+    }
+
+    .nav-links a {
+        color: #fff;
+    }
+}
