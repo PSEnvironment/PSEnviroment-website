@@ -141,8 +141,42 @@ img {
     font-size: 0.85rem;
 }
 
+/* ===== NAVBAR TRANSPARENTE SUR HERO ===== */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    z-index: 10;
+}
+
+nav {
+    height: 90px;
+}
+
+/* Liens blancs sur hero */
+.nav-links a,
+.logo,
+.logo span {
+    color: #ffffff;
+}
+
+/* Bouton devis */
+.nav-links .btn {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+/* Hover */
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
 /* Hero Section */
-..hero-image {
+.hero-image {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -658,12 +692,6 @@ footer {
     .services-grid {
         grid-template-columns: 1fr;
     }
-}
-/* Cache la navbar sur le hero */
-.hero header,
-.hero + header,
-header {
-    display: none;
 }
 img,
 .card,
