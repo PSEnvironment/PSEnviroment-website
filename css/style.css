@@ -25,8 +25,8 @@
     /* Shadows & Radius */
     --shadow-card: 0 4px 6px rgba(0,0,0,0.05);
     --shadow-hover: 0 10px 15px rgba(0,0,0,0.1);
-    --radius-sm: 4px;
-    --radius-md: 8px;
+    --radius-sm: 0px;
+    --radius-md: 0px;
 }
 
 * {
@@ -124,7 +124,6 @@ img {
 .btn:hover {
     background-color: var(--primary-light);
     border-color: var(--primary-light);
-    transform: translateY(-2px);
 }
 
 .btn-outline {
@@ -142,104 +141,35 @@ img {
     font-size: 0.85rem;
 }
 
-/* Header & Nav */
-header {
-    background-color: var(--white);
-    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 90px;
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    letter-spacing: -0.5px;
-}
-
-.logo span {
-    color: var(--neutral-mid);
-    font-weight: 400;
-    font-size: 1rem;
-    margin-left: 5px;
-    display: block;
-}
-
-.nav-links {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-.nav-links a {
-    font-weight: 600;
-    font-size: 0.95rem;
-    color: var(--neutral-dark);
-    position: relative;
-}
-
-.nav-links a:not(.btn):hover, .nav-links a:not(.btn).active {
-    color: var(--primary-color);
-}
-
-.nav-links a:not(.btn)::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: var(--accent-color);
-    transition: width 0.3s;
-}
-
-.nav-links a:not(.btn):hover::after, .nav-links a:not(.btn).active::after {
-    width: 100%;
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: var(--primary-color);
-}
-
 /* Hero Section */
-.hero-image {
+..hero-image {
     position: relative;
     height: 100vh;
-    background: url("images/hero-bg.jpg") center/cover no-repeat;
+    width: 100%;
+    background: url("images/hero-bg.jpg") center center / cover no-repeat;
     display: flex;
     align-items: center;
+    padding-left: 8%;
 }
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.35);
 }
 
 .hero-content {
     position: relative;
-    max-width: 600px;
+    max-width: 700px;
     color: #fff;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+    font-size: 3.2rem;
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
 }
 
 .hero-buttons {
@@ -248,15 +178,12 @@ nav {
     gap: 1rem;
 }
 
-.btn-light {
-    background: #fff;
-    color: #000;
-}
-
+.btn,
+.btn-light,
 .btn-outline-light {
-    border: 2px solid #fff;
-    color: #fff;
-    background: transparent;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .card {
@@ -731,5 +658,18 @@ footer {
     .services-grid {
         grid-template-columns: 1fr;
     }
+}
+/* Cache la navbar sur le hero */
+.hero header,
+.hero + header,
+header {
+    display: none;
+}
+img,
+.card,
+.service-card,
+.about-img img,
+.service-img img {
+    border-radius: 0 !important;
 }
 
