@@ -758,6 +758,94 @@ img,
     max-width: 700px;
     color: #fff;
 }
+/* ===== HERO TOP (LOGO + LIENS SANS NAVBAR) ===== */
+
+.hero-top {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.hero-logo img {
+    height: 48px;
+}
+
+/* Liens posés sur l’image */
+.hero-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.hero-links a {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+/* Soulignement discret */
+.hero-links a:not(.hero-cta)::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.hero-links a:hover::after {
+    width: 100%;
+}
+
+/* Bouton devis */
+.hero-cta {
+    border: 2px solid #ffffff;
+    padding: 8px 18px;
+}
+
+.hero-cta:hover {
+    background: #ffffff;
+    color: var(--primary-color);
+}
+
+/* HERO */
+.hero-image {
+    position: relative;
+    height: 100vh;
+    background: url("../images/hero-bg.jpg") center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+}
+
+/* Overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+/* Contenu */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+    color: #ffffff;
+}
+background: url("../images/hero-bg.jpg")
 
 .hero-content h1 {
     color: #fff;
