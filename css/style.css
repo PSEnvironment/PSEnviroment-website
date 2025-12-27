@@ -141,50 +141,100 @@ img {
     font-size: 0.85rem;
 }
 
+/* ===== HERO ===== */
 
-/* Hero Section */
-.hero-image {
+.hero {
     position: relative;
-    height: 100vh;
-    width: 100%;
-    background: url("images/hero-bg.jpg") center center / cover no-repeat;
+    min-height: 100vh;
+    background: url("images/hero-bg.jpg") center / cover no-repeat;
     display: flex;
     align-items: center;
     padding-left: 8%;
+    color: #fff;
 }
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
 }
 
+/* Haut : logo + liens */
+.hero-top {
+    position: absolute;
+    top: 40px;
+    left: 8%;
+    right: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.hero-brand img {
+    height: 42px;
+}
+
+/* Liens */
+.hero-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.hero-links a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* Bouton devis */
+.hero-cta {
+    border: 2px solid #fff;
+    padding: 6px 14px;
+}
+
+.hero-cta:hover {
+    background: #fff;
+    color: var(--primary-color);
+}
+
+/* Contenu principal */
 .hero-content {
     position: relative;
-    max-width: 700px;
-    color: #fff;
+    z-index: 2;
+    max-width: 650px;
 }
 
 .hero-content h1 {
     font-size: 3.2rem;
     line-height: 1.15;
     margin-bottom: 1.2rem;
-    font-weight: 700;
-    color: #ffffff;
 }
 
+.hero-content p {
+    font-size: 1.1rem;
+    max-width: 520px;
+}
+
+/* Boutons */
 .hero-buttons {
     margin-top: 2rem;
     display: flex;
     gap: 1rem;
 }
 
-.btn,
-.btn-light,
 .btn-outline-light {
-    border-radius: 0;
-    text-transform: uppercase;
-    font-weight: 600;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-outline-light:hover {
+    background: #fff;
+    color: var(--primary-color);
 }
 
 .card {
@@ -462,49 +512,6 @@ footer {
     font-size: 0.85rem;
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-    .about-grid, .service-block-content, .service-block-content.reverse {
-        grid-template-columns: 1fr;
-        flex-direction: column;
-        gap: var(--spacing-md);
-    }
-    
-    .contact-wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 90px;
-        left: 0;
-        width: 100%;
-        background-color: var(--white);
-        flex-direction: column;
-        padding: 20px;
-        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-        text-align: center;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-    
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-    
-    .hero-content .subtitle {
-        font-size: 1.1rem;
-    }
-}
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -663,191 +670,6 @@ img,
 .service-img img {
     border-radius: 0 !important;
 }
-/* ===== HERO NAV (LIENS SANS NAVBAR) ===== */
-
-.hero-nav {
-    position: absolute;
-    top: 30px;
-    left: 8%;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    z-index: 10;
-}
-
-.hero-nav a {
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    position: relative;
-}
-
-.hero-nav a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 0;
-    height: 2px;
-    background: var(--accent-color);
-    transition: width 0.3s ease;
-}
-
-.hero-nav a:hover::after,
-.hero-nav a.active::after {
-    width: 100%;
-}
-
-/* Bouton devis */
-.hero-btn {
-    border: 2px solid #ffffff;
-    padding: 8px 18px;
-}
-
-.hero-btn:hover {
-    background: #ffffff;
-    color: var(--primary-color);
-}
-@media (max-width: 768px) {
-    .hero-nav {
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-}
-.hero-image {
-    position: relative;
-    height: 100vh;
-    background: url("../images/hero-bg.jpg") center / cover no-repeat;
-    display: flex;
-    align-items: center;
-    padding-left: 8%;
-}
-
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.4);
-}
-
-/* Liens en haut sur l'image */
-.hero-top-links {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    display: flex;
-    gap: 25px;
-    z-index: 2;
-}
-
-.hero-top-links a {
-    color: #fff;
-    font-weight: 500;
-    font-size: 0.95rem;
-}
-
-.btn-hero {
-    border: 2px solid #fff;
-    padding: 6px 14px;
-}
-
-/* Contenu principal */
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 700px;
-    color: #fff;
-}
-/* ===== HERO TOP (LOGO + LIENS SANS NAVBAR) ===== */
-
-.hero-top {
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 1200px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 5;
-}
-
-.hero-logo img {
-    height: 48px;
-}
-
-/* Liens posés sur l’image */
-.hero-links {
-    display: flex;
-    gap: 25px;
-    align-items: center;
-}
-
-.hero-links a {
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    position: relative;
-}
-
-/* Soulignement discret */
-.hero-links a:not(.hero-cta)::after {
-    content: '';
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--accent-color);
-    transition: width 0.3s ease;
-}
-
-.hero-links a:hover::after {
-    width: 100%;
-}
-
-/* Bouton devis */
-.hero-cta {
-    border: 2px solid #ffffff;
-    padding: 8px 18px;
-}
-
-.hero-cta:hover {
-    background: #ffffff;
-    color: var(--primary-color);
-}
-
-/* HERO */
-.hero-image {
-    position: relative;
-    height: 100vh;
-    background: url("../images/hero-bg.jpg") center / cover no-repeat;
-    display: flex;
-    align-items: center;
-    padding-left: 8%;
-}
-
-/* Overlay */
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.4);
-}
-
-/* Contenu */
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 650px;
-    color: #ffffff;
-}
-background: url("../images/hero-bg.jpg")
-
-.hero-content h1 {
-    color: #fff;
-    font-size: 3.2rem;
+.hero-links a:hover {
+    opacity: 0.8;
 }
