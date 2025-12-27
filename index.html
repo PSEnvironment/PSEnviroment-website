@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExeArb - Experts en Arboriculture et Élagage</title>
-    <meta name="description" content="Services professionnels d'arboriculture, élagage et entretien d'espaces verts. Qualité, sécurité et respect de la nature.">
+    <title>PSE - Professional Services for the Environment</title>
+    <meta name="description" content="PSE est votre partenaire de confiance pour l'entretien, la protection et l'embellissement durable de l'environnement. Services techniques, solutions écologiques et formation.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -24,7 +24,7 @@
         <div class="container">
             <nav>
                 <a href="index.html" class="logo">
-                    <i class="fas fa-tree"></i> Exe<span>Arb</span>
+                    <i class="fas fa-leaf"></i> PSE <span>Professional Services<br>for the Environment</span>
                 </a>
                 <div class="hamburger">
                     <i class="fas fa-bars"></i>
@@ -42,97 +42,171 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content container">
-            <h1>L'Art de l'Arboriculture</h1>
-            <p>Nous prenons soin de vos arbres et de votre paysage avec expertise et passion. Intervention rapide et respectueuse de l'environnement.</p>
-            <a href="contact.html" class="btn">Demander un Devis</a>
+        <div class="hero-content">
+            <h1>Professional Services for the Environment</h1>
+            <p class="subtitle">Entretien, protection et valorisation durable de votre environnement</p>
+            <a href="contact.html" class="btn">Nous Contacter</a>
+            <a href="services.html" class="btn btn-outline" style="color: white; border-color: white; margin-left: 10px;">Nos Services</a>
         </div>
     </section>
 
-    <!-- Services Preview -->
-    <section class="section services-preview">
+    <!-- Intro Section -->
+    <section class="section">
+        <div class="container text-center" style="max-width: 800px;">
+            <h2 class="section-title">Votre Partenaire Durable</h2>
+            <p class="lead" style="font-size: 1.1rem; color: var(--neutral-mid); margin-bottom: 2rem;">
+                PSE est un partenaire de confiance pour l’entretien, la protection et l’embellissement durable des biens et espaces naturels.
+            </p>
+            <p>
+                Nous sommes une équipe engagée, expérimentée et spécialisée dans les écosystèmes locaux. Notre approche multidisciplinaire combine expertise technique, solutions écologiques et sensibilisation pour créer un impact positif et durable.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section bg-light">
         <div class="container">
             <div class="text-center">
-                <h2>Nos Services</h2>
-                <p>Des solutions complètes pour la santé et la beauté de vos arbres.</p>
+                <h2 class="section-title">Nos Domaines d'Intervention</h2>
+                <p>Une approche globale pour répondre à tous vos besoins environnementaux.</p>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Élagage & Soins</h3>
-                    <p>Taille douce, sanitaire ou de formation pour garantir la longévité et l'esthétique de vos arbres.</p>
+            <div class="card-grid">
+                <!-- Service 1 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Service des Arbres</h3>
+                    <p>Plantation, élagage, soins et abattage sécurisé. Une gestion experte de votre patrimoine arboré.</p>
+                    <a href="services.html#arbres" class="card-link">En savoir plus</a>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-axe"></i>
-                    <h3>Abattage Contrôlé</h3>
-                    <p>Intervention sécurisée pour le retrait d'arbres dangereux ou gênants, même en accès difficile.</p>
+
+                <!-- Service 2 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Paysagisme & Jardins</h3>
+                    <p>Création, aménagement floral et entretien d'espaces verts pour des extérieurs harmonieux.</p>
+                    <a href="services.html#paysagisme" class="card-link">En savoir plus</a>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-seedling"></i>
-                    <h3>Plantation & Conseil</h3>
-                    <p>Sélection et plantation d'essences adaptées à votre terrain et conseils d'entretien.</p>
+
+                <!-- Service 3 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-carrot"></i>
+                    </div>
+                    <h3>Agroécologie</h3>
+                    <p>Potagers urbains, compostage et ateliers pratiques pour reconnecter avec la terre.</p>
+                    <a href="services.html#agroecologie" class="card-link">En savoir plus</a>
                 </div>
-            </div>
-            <div class="text-center" style="margin-top: 2rem;">
-                <a href="services.html" class="btn btn-secondary">Voir tous nos services</a>
+
+                <!-- Service 4 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Produits Écologiques</h3>
+                    <p>Boutique upcycling, objets durables et artisanat pour une consommation responsable.</p>
+                    <a href="services.html#boutique" class="card-link">En savoir plus</a>
+                </div>
+
+                 <!-- Service 5 -->
+                 <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Formation & Normes</h3>
+                    <p>Accompagnement ISO 14001, analyse de risques et stratégies de réduction carbone.</p>
+                    <a href="services.html#formation" class="card-link">En savoir plus</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- About Snippet -->
-    <section class="section about-snippet">
+    <!-- Why Choose Us -->
+    <section class="section">
         <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?auto=format&fit=crop&w=800&q=80" alt="Arboriste au travail">
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb7d5b43?auto=format&fit=crop&w=800&q=80" alt="Équipe PSE sur le terrain">
                 </div>
                 <div class="about-text">
-                    <h2>Votre Partenaire de Confiance</h2>
-                    <p>Chez ExeArb, nous croyons que chaque arbre mérite une attention particulière. Notre équipe qualifiée combine techniques modernes et respect des traditions arboricoles pour offrir un service irréprochable.</p>
-                    <p>Que vous soyez un particulier, une entreprise ou une collectivité, nous nous engageons à valoriser votre patrimoine vert en toute sécurité.</p>
-                    <a href="about.html" class="btn">En savoir plus sur nous</a>
+                    <h2 class="section-title text-left">Pourquoi choisir PSE ?</h2>
+                    <p>Choisir PSE, c'est opter pour une expertise reconnue et un engagement sincère envers la durabilité.</p>
+                    
+                    <div class="reasons-grid" style="grid-template-columns: 1fr; gap: 20px; margin-top: 30px;">
+                        <div class="reason-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Expertise Technique Éprouvée</h4>
+                                <p>Des professionnels qualifiés maîtrisant les dernières techniques et normes du secteur.</p>
+                            </div>
+                        </div>
+                        <div class="reason-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Équipe Engagée</h4>
+                                <p>Des passionnés dédiés à la protection de l'environnement et à la satisfaction client.</p>
+                            </div>
+                        </div>
+                        <div class="reason-item">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h4>Solutions Écologiques</h4>
+                                <p>Des approches adaptées au contexte local, respectueuses de la biodiversité.</p>
+                            </div>
+                        </div>
+                        <div class="reason-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h4>Résultats Durables</h4>
+                                <p>Des interventions pensées pour le long terme avec un impact mesurable.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="section cta">
+    <!-- CTA -->
+    <section class="section" style="background-color: var(--primary-color); color: white; text-align: center;">
         <div class="container">
-            <h2>Prêt à transformer votre extérieur ?</h2>
-            <p style="margin-bottom: 2rem;">Contactez-nous dès aujourd'hui pour une estimation gratuite.</p>
-            <a href="contact.html" class="btn btn-secondary">Contactez-nous</a>
+            <h2 style="color: white; border-bottom: none;">Prêt à agir pour votre environnement ?</h2>
+            <p style="margin-bottom: 2rem; opacity: 0.9;">Contactez-nous pour discuter de vos projets et obtenir une solution sur mesure.</p>
+            <a href="contact.html" class="btn" style="background-color: white; color: var(--primary-color); border-color: white;">Contactez-nous</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>ExeArb</h4>
-                    <p>Experts en arboriculture dévoués à la préservation de la nature et à la satisfaction client.</p>
+            <div class="footer-top">
+                <div class="footer-widget">
+                    <h4>PSE - Professional Services for the Environment</h4>
+                    <p>Votre partenaire expert pour un avenir plus vert. Nous combinons savoir-faire technique et engagement écologique pour servir les particuliers, entreprises et collectivités.</p>
                 </div>
-                <div class="footer-col">
+                <div class="footer-widget">
                     <h4>Liens Rapides</h4>
-                    <ul>
+                    <ul class="footer-links">
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="about.html">À Propos</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
+                <div class="footer-widget">
                     <h4>Contact</h4>
-                    <ul>
-                        <li><i class="fas fa-phone"></i> +33 1 23 45 67 89</li>
-                        <li><i class="fas fa-envelope"></i> contact@exearb.fr</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Bordeaux, France</li>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Siège Social, Ville, Pays</li>
+                        <li><i class="fas fa-envelope"></i> contact@pse-environment.com</li>
+                        <li><i class="fas fa-phone"></i> +123 456 7890</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 ExeArb. Tous droits réservés.</p>
+                <p>&copy; 2024 PSE - Professional Services for the Environment. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
