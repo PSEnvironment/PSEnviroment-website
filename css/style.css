@@ -780,9 +780,11 @@ img,
 ================================ */
 
 .testimonial-section {
-    background-color: #3f4642;
-    padding: 90px 8%;
-    color: #ffffff;
+    background: #3f4642;
+    color: #fff;
+    padding: 70px 8%; /* AVANT : 120px */
+    position: relative;
+    overflow: hidden;
 }
 
 .testimonial-inner {
@@ -793,12 +795,12 @@ img,
 /* GROS GUILLEMETS */
 .testimonial-quotes {
     position: absolute;
-    top: -110px;
-    left: -40px;
-    font-size: 520px;
-    line-height: 1;
+    left: -90px;
+    top: 40px;
+    font-size: 520px; /* PLUS GRAND */
+    line-height: 0.8;
     font-family: 'Libre Baskerville', serif;
-    color: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.12);
     pointer-events: none;
 }
 
@@ -813,10 +815,11 @@ img,
 /* TEXTE */
 .testimonial-text {
     font-family: 'Libre Baskerville', serif;
-    font-size: 1.9rem;
+    font-size: 1.8rem; /* AVANT : 2.1rem */
     line-height: 1.4;
-    max-width: 860px;
-    margin-bottom: 2.2rem;
+    font-weight: 400;
+    max-width: 820px;
+    margin-bottom: 2rem;
 }
 
 /* FOOTER */
@@ -827,7 +830,7 @@ img,
 }
 
 .testimonial-date {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     opacity: 0.75;
 }
 
