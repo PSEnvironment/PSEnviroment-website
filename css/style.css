@@ -173,7 +173,7 @@ img {
 }
 
 .hero-brand img {
-    height: 42px;
+    height: 90px;
 }
 
 /* Liens */
@@ -675,4 +675,9 @@ img,
 }
 .hero-overlay {
     background: rgba(0,0,0,0.4);
+}
+@media (max-width: 768px) {
+    .hero-brand img {
+        height: 70px;
+    }
 }
