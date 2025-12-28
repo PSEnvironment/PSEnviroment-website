@@ -692,3 +692,63 @@ img,
         height: 70px;
     }
 }
+/* ===== ABOUT SPLIT (STYLE IMAGE 2) ===== */
+
+.about-split {
+    padding: 6rem 0;
+}
+
+.about-grid-2 {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+/* Texte */
+.about-eyebrow {
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--neutral-mid);
+    margin-bottom: 1rem;
+}
+
+.about-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-lead {
+    font-size: 1.1rem;
+    color: var(--neutral-mid);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.about-paragraph {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: var(--neutral-dark);
+    max-width: 520px;
+}
+
+/* Image */
+.about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .about-grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        margin-top: 3rem;
+    }
+}
