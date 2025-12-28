@@ -773,3 +773,74 @@ img,
     .about-intro {
         padding: 3rem 1rem;
     }
+/* ===============================
+   TESTIMONIAL SIMPLE (BASE)
+================================ */
+
+.testimonial-section {
+    background-color: #3f4642;
+    padding: 120px 8%;
+    color: #ffffff;
+}
+
+.testimonial-inner {
+    max-width: 1100px;
+    position: relative;
+}
+
+/* GROS GUILLEMETS */
+.testimonial-quotes {
+    position: absolute;
+    top: -80px;
+    left: -20px;
+    font-size: 420px;
+    line-height: 1;
+    font-family: 'Libre Baskerville', serif;
+    color: rgba(255,255,255,0.08);
+    pointer-events: none;
+}
+
+/* SOURCE */
+.testimonial-source {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    opacity: 0.75;
+}
+
+/* TEXTE */
+.testimonial-text {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.1rem;
+    line-height: 1.35;
+    max-width: 900px;
+    margin-bottom: 2.5rem;
+}
+
+/* FOOTER */
+.testimonial-footer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.testimonial-date {
+    font-size: 0.95rem;
+    opacity: 0.75;
+}
+
+/* BOUTON */
+.testimonial-btn {
+    border: 1px solid rgba(255,255,255,0.7);
+    padding: 10px 22px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.testimonial-btn:hover {
+    background: #ffffff;
+    color: #3f4642;
+}
