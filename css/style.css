@@ -936,6 +936,111 @@ img,
         font-size: 2.4rem;
     }
 }
+/* ===============================
+   CUSTOMER COMMENTS
+================================ */
+
+.customer-comments {
+    padding: 6rem 0;
+    background: #ffffff;
+}
+
+.comments-title {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    color: #4a4f4b;
+}
+
+.comments-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* CARD */
+.comment-card {
+    position: relative;
+    padding: 3rem 2.5rem;
+    min-height: 420px;
+    overflow: hidden;
+}
+
+/* Couleurs */
+.comment-card.dark {
+    background: #3f4642;
+    color: #ffffff;
+}
+
+.comment-card.light {
+    background: #cfdcd2;
+    color: #2f3a32;
+}
+
+/* Source */
+.comment-source {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-bottom: 2rem;
+}
+
+/* Texte */
+.comment-text {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Date */
+.comment-date {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+}
+
+/* Bouton */
+.comment-btn {
+    display: inline-block;
+    border: 1px solid currentColor;
+    padding: 10px 24px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.comment-btn:hover {
+    background: currentColor;
+    color: #fff;
+}
+
+/* GROS GUILLEMETS */
+.comment-quote {
+    position: absolute;
+    bottom: -40px;
+    right: -20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 300px;
+    line-height: 1;
+    opacity: 0.08;
+    pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .comments-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comment-card {
+        min-height: auto;
+    }
+}
 
 .testimonial-btn:hover {
     background: #ffffff;
