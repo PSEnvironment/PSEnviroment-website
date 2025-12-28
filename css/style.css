@@ -849,6 +849,93 @@ img,
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
 }
+/* ===============================
+   CONTACT SECTION (IMG 2 STYLE)
+================================ */
+
+.contact-section {
+    background: #f1f5f2;
+    padding: 6rem 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 5rem;
+    align-items: flex-start;
+}
+
+/* LEFT */
+.contact-info p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #4a4a4a;
+}
+
+.contact-info h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3.2rem;
+    margin-bottom: 2.5rem;
+    color: #3f4642;
+}
+
+.contact-details li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    color: #000;
+}
+
+.contact-details i {
+    font-size: 1.2rem;
+}
+
+/* RIGHT */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 16px;
+    font-size: 1rem;
+    border: 1px solid #cfcfcf;
+    margin-bottom: 1.2rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.contact-form textarea {
+    min-height: 160px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 18px;
+    background: #c9d6cf;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .contact-info h2 {
+        font-size: 2.4rem;
+    }
+}
 
 .testimonial-btn:hover {
     background: #ffffff;
