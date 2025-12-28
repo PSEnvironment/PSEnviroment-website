@@ -12,7 +12,7 @@
     --border-color: #e0e0e0;
     
     /* Typography */
-    --font-heading: 'Montserrat', sans-serif;
+    --font-heading: 'Libre Baskerville', serif;
     --font-body: 'Open Sans', sans-serif;
     
     /* Spacing */
@@ -188,6 +188,8 @@ img {
     font-size: 0.9rem;
     text-transform: uppercase;
     position: relative;
+
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Bouton devis */
@@ -212,6 +214,11 @@ img {
     font-size: 3.2rem;
     line-height: 1.15;
     margin-bottom: 1.2rem;
+
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #ffffff; /* optionnel mais recommandé sur image */
 }
 
 .hero-content p {
