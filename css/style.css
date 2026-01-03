@@ -1124,4 +1124,18 @@ img,
   align-items: center;
   gap: 0.6rem;
 }
+/* ===== HERO : bouton NOUS CONTACTER ===== */
+
+.hero-buttons .btn {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    background-color: transparent;   /* devient transparent */
+    color: #ffffff;                  /* texte reste blanc */
+    border-color: #ffffff;           /* contour blanc élégant */
+}
 
