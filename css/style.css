@@ -490,15 +490,18 @@ textarea.form-control {
 footer {
     background-color: #1e272e;
     color: #b2bec3;
-    padding: var(--spacing-xl) 0 20px;
-    font-size: 0.95rem;
+    padding: 60px 0 20px;
+    font-size: 0.9rem;
 }
 
 .footer-top {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    margin-bottom: var(--spacing-lg);
+    grid-template-columns: repeat(4, 1fr); /* structure stable */
+    gap: 24px; /* AVANT 40px */
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-widget h4 {
