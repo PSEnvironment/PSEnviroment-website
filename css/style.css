@@ -1162,3 +1162,28 @@ img,
     border-color: var(--primary-color);
 }
 
+/* ===== HOVER ADAPTATIF - COMMENTAIRES ===== */
+
+/* Cards SOMBRES */
+.comment-card.dark .comment-btn {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.comment-card.dark .comment-btn:hover {
+    background: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+}
+
+/* Cards CLAIRES */
+.comment-card.light .comment-btn {
+    color: #000000;
+    border-color: #000000;
+}
+
+.comment-card.light .comment-btn:hover {
+    background: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
