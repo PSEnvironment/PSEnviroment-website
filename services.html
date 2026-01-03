@@ -3,194 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Services - PSE</title>
-    <meta name="description" content="Découvrez nos services : soins aux arbres, paysagisme, agroécologie, produits écologiques et formation environnementale.">
+    <title>PSE - Professional Services for the Environment</title>
+    <meta name="description" content="PSE est votre partenaire de confiance pour l'entretien, la protection et l'embellissement durable de l'environnement. Services techniques, solutions écologiques et formation.">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <nav>
-                <a href="index.html" class="logo">
-                    <i class="fas fa-leaf"></i> PSE <span>Professional Services<br>for the Environment</span>
-                </a>
-                <div class="hamburger">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <div class="nav-links">
-                    <a href="index.html">Accueil</a>
-                    <a href="services.html" class="active">Services</a>
-                    <a href="about.html">À Propos</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="contact.html" class="btn btn-sm">Devis Gratuit</a>
-                </div>
-            </nav>
-        </div>
-    </header>
+  <!-- Hero Section -->
+<section class="hero">
 
-    <div class="page-header">
-        <div class="container">
-            <h1>Nos Services</h1>
-            <p>Une expertise multidisciplinaire pour un environnement durable</p>
+    <!-- Top overlay (logo + liens) -->
+    <div class="hero-top">
+        <div class="hero-brand">
+            <img src="images/logo-pse.png" alt="PSE logo">
+        </div>
+
+        <div class="hero-links">
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">À propos</a>
+            <a href="contact.html">Contact</a>
         </div>
     </div>
 
-    <section class="section">
-        <div class="container">
-            
-            <!-- Service 1: Arbres -->
-            <div id="arbres" class="service-block">
-                <div class="service-block-content">
-                    <div class="service-text">
-                        <div class="card-icon" style="margin: 0 0 20px 0; width: 60px; height: 60px; font-size: 1.5rem;">
-                            <i class="fas fa-tree"></i>
-                        </div>
-                        <h2>Service des Arbres</h2>
-                        <p>Nos arboristes certifiés prennent soin de votre patrimoine arboré avec des techniques respectueuses de la physiologie de l'arbre et de la sécurité.</p>
-                        <ul>
-                            <li><strong>Plantation d’arbres :</strong> Sélection d'essences adaptées au sol et au climat, plantation soignée pour garantir la reprise.</li>
-                            <li><strong>Réduction et éclaircissement de couronne :</strong> Taille douce pour alléger la structure, réduire la prise au vent et laisser passer la lumière.</li>
-                            <li><strong>Enlèvement sécurisé d’arbres :</strong> Abattage par démontage pour les arbres dangereux ou morts, même en milieu contraint.</li>
-                            <li><strong>Élagage d’arbres fruitiers :</strong> Taille de fructification pour optimiser vos récoltes et la santé de vos vergers.</li>
-                        </ul>
-                    </div>
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1591857177580-dc82b92811d0?auto=format&fit=crop&w=800&q=80" alt="Arboriste grimpeur élaguant un arbre">
-                    </div>
-                </div>
-            </div>
+    <!-- Overlay sombre -->
+    <div class="hero-overlay"></div>
 
-            <!-- Service 2: Paysagisme -->
-            <div id="paysagisme" class="service-block">
-                <div class="service-block-content reverse">
-                    <div class="service-text">
-                        <div class="card-icon" style="margin: 0 0 20px 0; width: 60px; height: 60px; font-size: 1.5rem;">
-                            <i class="fas fa-seedling"></i>
-                        </div>
-                        <h2>Service de Paysagisme</h2>
-                        <p>Transformez vos extérieurs en véritables havres de paix. Nous concevons et entretenons des espaces verts esthétiques et fonctionnels.</p>
-                        <ul>
-                            <li><strong>Création et installation de jardins :</strong> Conception paysagère sur mesure, du plan à la réalisation.</li>
-                            <li><strong>Aménagement floral :</strong> Création de massifs, parterres et jardinières pour colorer vos saisons.</li>
-                            <li><strong>Entretien des espaces verts :</strong> Tonte, taille de haies, désherbage manuel et soins réguliers.</li>
-                        </ul>
-                    </div>
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80" alt="Jardin paysager soigné">
-                    </div>
-                </div>
-            </div>
+    <!-- Contenu central -->
+    <div class="hero-content">
+        <h1>Services professionnels<br>pour l'environnement</h1>
+        <p>Entretien, protection et valorisation durable de votre environnement</p>
 
-            <!-- Service 3: Agroécologie -->
-            <div id="agroecologie" class="service-block">
-                <div class="service-block-content">
-                    <div class="service-text">
-                        <div class="card-icon" style="margin: 0 0 20px 0; width: 60px; height: 60px; font-size: 1.5rem;">
-                            <i class="fas fa-carrot"></i>
-                        </div>
-                        <h2>Agroécologie & Jardins Urbains</h2>
-                        <p>Nous ramenons la nature et l'autonomie alimentaire au cœur des villes et des jardins privés grâce à des méthodes permacoles.</p>
-                        <ul>
-                            <li><strong>Création de potagers :</strong> Installation de bacs de culture ou potagers en pleine terre pour particuliers, écoles et entreprises.</li>
-                            <li><strong>Production de compost et biofertilisants :</strong> Mise en place de composteurs et fourniture d'amendements naturels.</li>
-                            <li><strong>Ateliers pratiques :</strong> Formation au jardinage écologique, au compostage et à la permaculture pour tous les âges.</li>
-                        </ul>
-                    </div>
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=800&q=80" alt="Potager urbain et légumes frais">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service 4: Boutique -->
-            <div id="boutique" class="service-block">
-                <div class="service-block-content reverse">
-                    <div class="service-text">
-                        <div class="card-icon" style="margin: 0 0 20px 0; width: 60px; height: 60px; font-size: 1.5rem;">
-                            <i class="fas fa-recycle"></i>
-                        </div>
-                        <h2>Boutique Upcycling & Produits Écologiques</h2>
-                        <p>Promouvoir une économie circulaire en donnant une seconde vie aux matériaux et en proposant des alternatives durables.</p>
-                        <ul>
-                            <li><strong>Vente de produits recyclés et upcyclés :</strong> Mobilier et décoration créés à partir de matériaux récupérés.</li>
-                            <li><strong>Articles durables pour la maison :</strong> Alternatives zéro déchet, produits d'entretien naturels.</li>
-                            <li><strong>Objets artisanaux écologiques :</strong> Créations uniques réalisées par des artisans locaux engagés.</li>
-                        </ul>
-                    </div>
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80" alt="Produits écologiques et naturels">
-                    </div>
-                </div>
-            </div>
-
-             <!-- Service 5: Formation -->
-             <div id="formation" class="service-block">
-                <div class="service-block-content">
-                    <div class="service-text">
-                        <div class="card-icon" style="margin: 0 0 20px 0; width: 60px; height: 60px; font-size: 1.5rem;">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h2>Formations & Normes Environnementales</h2>
-                        <p>Accompagner les organisations vers l'excellence environnementale et la conformité réglementaire.</p>
-                        <ul>
-                            <li><strong>Systèmes de Management Environnemental (SME) :</strong> Mise en place et audit de vos processus internes.</li>
-                            <li><strong>Normes ISO 14001 et ESG :</strong> Accompagnement à la certification et reporting Environnemental, Social et de Gouvernance.</li>
-                            <li><strong>Analyse des risques environnementaux :</strong> Identification et mitigation des impacts potentiels de vos activités.</li>
-                            <li><strong>Réduction de l’empreinte carbone :</strong> Stratégies concrètes pour diminuer vos émissions de CO2.</li>
-                        </ul>
-                    </div>
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80" alt="Formation professionnelle en salle">
-                    </div>
-                </div>
-            </div>
-
+        <div class="hero-buttons">
+            <a href="#contact" class="btn btn-contact">NOUS CONTACTER</a>
+            <a href="services.html" class="btn btn-outline-light">Services</a>
         </div>
-    </section>
+    </div>
 
-    <section class="section cta">
-        <div class="container">
-            <h2 style="color: white; border-bottom: none;">Besoin d'une solution sur mesure ?</h2>
-            <p style="margin-bottom: 2rem; color: white;">Nos experts sont là pour analyser vos besoins spécifiques.</p>
-            <a href="contact.html" class="btn btn-outline" style="background-color: white; color: var(--primary-color); border-color: white;">Demander un devis</a>
-        </div>
-    </section>
+</section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-widget">
-                    <h4>PSE - Professional Services for the Environment</h4>
-                    <p>Votre partenaire expert pour un avenir plus vert.</p>
-                </div>
-                <div class="footer-widget">
-                    <h4>Liens Rapides</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">À Propos</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-widget">
-                    <h4>Contact</h4>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-envelope"></i> contact@pse-environment.com</li>
-                        <li><i class="fas fa-phone"></i> +123 456 7890</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 PSE. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-</body>
-</html>
+   
