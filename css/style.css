@@ -1208,9 +1208,8 @@ img,
     color: var(--primary-color); /* vert intense */
     border-color: var(--primary-color);
 }
-
 .services-section {
-    padding: 6rem 0;
+    padding-top: 3rem; /* au lieu de 6rem */
 }
 
 .services-cta {
