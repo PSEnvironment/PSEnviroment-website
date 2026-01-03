@@ -1208,3 +1208,12 @@ img,
     color: var(--primary-color); /* vert intense */
     border-color: var(--primary-color);
 }
+
+.services-section {
+    padding: 6rem 0;
+}
+
+.services-cta {
+    margin-top: 4rem;
+    text-align: center;
+}
