@@ -1105,3 +1105,8 @@ img,
     background: #ffffff;
     color: #3f4642;
 }
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
