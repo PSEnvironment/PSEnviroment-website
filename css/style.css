@@ -1138,5 +1138,28 @@ img,
     color: #ffffff;
     border-color: #ffffff;
 }
+/* ===== BOUTON SERVICES – HOVER SPÉCIAL ===== */
+
+.btn-services-hover {
+    background-color: var(--primary-light);
+    color: #ffffff;
+    border: 2px solid var(--primary-light);
+    padding: 14px 34px;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 
+        background-color 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease;
+}
+
+/* HOVER : fond devient transparent */
+.btn-services-hover:hover {
+    background-color: transparent;
+    color: var(--primary-light);
+    border-color: var(--primary-light);
+}
 
 
