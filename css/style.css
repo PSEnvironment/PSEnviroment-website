@@ -1209,5 +1209,5 @@ img,
     border-color: var(--primary-color);
 }
 .services-section {
-    padding-top: 3rem; /* au lieu de 6rem */
+    padding-top: 1.5rem; /* au lieu de 6rem */
 }
