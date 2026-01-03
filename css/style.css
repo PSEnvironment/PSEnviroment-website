@@ -1211,3 +1211,23 @@ img,
 .services-section {
     padding-top: 1.5rem; /* au lieu de 6rem */
 }
+
+/* ===== PAGE SERVICE ===== */
+.page-services .hero-content h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.page-services .hero-content h1 {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.page-services .hero-content h3 {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 700px;
+}
