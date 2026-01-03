@@ -1052,13 +1052,14 @@ img,
 
 /* Grille principale */
 .footer-inner {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 8%;
+  padding: 50px 4%; /* AVANT 100px 8% */
   display: grid;
   grid-template-columns: 1.3fr 1fr 1fr 1fr;
-  gap: 4rem;
+  gap: 2.5rem; /* AVANT 4rem */
 }
+
 
 /* Logo */
 .footer-logo {
@@ -1076,7 +1077,7 @@ img,
 .site-footer p,
 .site-footer li {
   font-size: 0.95rem;
-  line-height: 1.6;
+  line-height: 1.45;
 }
 
 /* Listes */
@@ -1113,3 +1114,9 @@ img,
     flex-direction: column;
     gap: 1.2rem;
 }
+.site-footer li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
