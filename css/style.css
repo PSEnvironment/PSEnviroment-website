@@ -1246,3 +1246,36 @@ img,
     color: #ffffff;
     opacity: 0.85;
 }
+/* =========================
+   HERO – PAGE SERVICES
+========================= */
+
+.hero-services .hero-content {
+    max-width: 900px;
+}
+
+/* Texte au-dessus du titre */
+.hero-services .hero-content h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    margin-bottom: 1.2rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* TITRE PRINCIPAL (identique img 2) */
+.hero-services .hero-content h1 {
+    font-size: 4.5rem; /* clé ici */
+    line-height: 1.05;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+/* TEXTE descriptif */
+.hero-services .hero-content h3 {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    font-weight: 400;
+    max-width: 680px;
+    color: rgba(255, 255, 255, 0.9);
+}
