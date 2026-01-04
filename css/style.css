@@ -1269,7 +1269,8 @@ img,
 ========================= */
 
 .hero-services .hero-content {
-    max-width: 900px;
+    max-width: 650px; /* IDENTIQUE À HOME */
+    margin-top: 130px; /* IDENTIQUE À HOME */
 }
 
 /* Texte au-dessus du titre */
@@ -1283,7 +1284,7 @@ img,
 
 /* TITRE PRINCIPAL (identique img 2) */
 .hero-services .hero-content h1 {
-    font-size: 3.6rem; /* clé ici */
+    font-size: 3.2rem; /* clé ici */
     line-height: 1.05;
     margin-bottom: 2rem;
     color: #ffffff;
