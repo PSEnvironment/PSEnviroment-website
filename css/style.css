@@ -1242,7 +1242,7 @@ img,
 /* ===== HERO PAGE SERVICES ===== */
 
 .hero-services .hero-content h1 {
-    font-size: 4.1rem; /* un peu plus compact */
+    font-size: 3.6rem; /* un peu plus compact */
     line-height: 1.05;
     margin-bottom: 2rem;
     color: #ffffff;
@@ -1283,7 +1283,7 @@ img,
 
 /* TITRE PRINCIPAL (identique img 2) */
 .hero-services .hero-content h1 {
-    font-size: 4.5rem; /* clé ici */
+    font-size: 3.6rem; /* clé ici */
     line-height: 1.05;
     margin-bottom: 2rem;
     color: #ffffff;
