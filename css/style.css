@@ -1298,3 +1298,10 @@ img,
     max-width: 680px;
     color: rgba(255, 255, 255, 0.9);
 }
+.hero-top {
+    position: absolute;
+    top: 40px;
+    left: 8%;
+    right: 8%;
+    max-width: 100%;
+}
