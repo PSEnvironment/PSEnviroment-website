@@ -1231,3 +1231,18 @@ img,
   line-height: 1.6;
   max-width: 700px;
 }
+/* ===== HERO PAGE SERVICES ===== */
+
+.hero-services .hero-content h1 {
+    color: #ffffff;
+}
+
+.hero-services .hero-content h2 {
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.hero-services .hero-content h3 {
+    color: #ffffff;
+    opacity: 0.85;
+}
