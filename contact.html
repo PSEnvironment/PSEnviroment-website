@@ -2,131 +2,131 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Contact | PSE – Performance & Stratégie Environnementale</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS principal -->
+    <title>Contact | PSE – Professional Services for the Environment</title>
+    <meta name="description" content="Contactez PSE pour vos projets environnementaux, paysagisme, agroécologie et services durables.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<!-- ================= HERO CONTACT ================= -->
+<!-- ================= HERO (IDENTIQUE HOME – SANS BOUTONS) ================= -->
+<section class="hero">
 
-<section class="hero" style="background-image:url('images/contact-hero.jpg')">
-    <div class="hero-overlay"></div>
-
-    <!-- Header -->
+    <!-- Top : logo + navigation -->
     <div class="hero-top">
         <div class="hero-brand">
-            <img src="images/logo.png" alt="PSE Logo">
+            <img src="images/logo-pse.png" alt="PSE logo">
         </div>
 
-        <nav class="hero-links">
+        <div class="hero-links">
             <a href="index.html">Accueil</a>
             <a href="services.html">Services</a>
             <a href="about.html">À propos</a>
-            <a href="contact.html" class="hero-cta">Contact</a>
-        </nav>
+            <a href="contact.html">Contact</a>
+        </div>
     </div>
 
-    <!-- Content -->
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Contenu texte uniquement -->
     <div class="hero-content">
-        <h1>Contactez-nous</h1>
+        <h1>Contact</h1>
         <p>
-            Une question, un projet ou besoin d’un accompagnement environnemental ?
-            Parlons-en dès aujourd’hui.
+            Parlons de votre projet environnemental.<br>
+            Notre équipe est à votre écoute.
         </p>
-
-        <div class="hero-buttons">
-            <a href="#contact" class="btn btn-contact">Nous écrire</a>
-        </div>
     </div>
+
 </section>
 
-<!-- ================= CONTACT SECTION ================= -->
+<!-- ================= SECTION CONTACT ================= -->
+<section class="contact-section">
+    <div class="container contact-grid">
 
-<section id="contact" class="contact-section">
-    <div class="container">
-        <div class="contact-grid">
-
-            <!-- LEFT INFO -->
-            <div class="contact-info">
-                <p>
-                    Nous accompagnons les organisations et collectivités dans
-                    leurs démarches environnementales, de la stratégie à l’action.
-                </p>
-
-                <h2>Entrons en contact</h2>
-
-                <ul class="contact-details">
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        <span>+33 6 00 00 00 00</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>contact@pse-environnement.fr</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span>France & International</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- RIGHT FORM -->
-            <form class="contact-form">
-                <div class="form-row">
-                    <input type="text" placeholder="Nom complet" required>
-                    <input type="email" placeholder="Adresse email" required>
-                </div>
-
-                <div class="form-row">
-                    <input type="text" placeholder="Téléphone">
-                    <input type="text" placeholder="Organisation">
-                </div>
-
-                <textarea placeholder="Votre message"></textarea>
-
-                <button type="submit">Envoyer le message</button>
-            </form>
-
-        </div>
-    </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-
-<footer class="site-footer">
-    <div class="footer-inner">
-
-        <!-- Brand -->
-        <div class="footer-column">
-            <img src="images/logo.png" alt="PSE Logo" class="footer-logo">
-            <p>
-                Cabinet de conseil spécialisé en performance environnementale,
-                stratégie carbone et transition durable.
+        <!-- COLONNE GAUCHE -->
+        <div class="contact-info">
+            <p class="contact-eyebrow">
+                Une question ? Un projet ?
             </p>
-        </div>
 
-        <!-- Contact -->
-        <div class="footer-column">
-            <h4>Contact</h4>
-            <ul>
-                <li><i class="fa-solid fa-phone"></i> +33 6 00 00 00 00</li>
-                <li><i class="fa-solid fa-envelope"></i> contact@pse-environnement.fr</li>
+            <h2>Contactez-nous</h2>
+
+            <ul class="contact-details">
+                <li>
+                    <i class="fas fa-phone"></i>
+                    +242 06 873 67 97
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    direction@psenvironment.org
+                </li>
+                <li>
+                    <i class="fab fa-linkedin"></i>
+                    PSEnvironment
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                    PS_Environment
+                </li>
             </ul>
         </div>
 
-        <!-- Sitemap -->
+        <!-- COLONNE DROITE : FORMULAIRE -->
+        <form class="contact-form">
+            <input type="text" placeholder="Nom" required>
+
+            <div class="form-row">
+                <input type="text" placeholder="Téléphone">
+                <input type="email" placeholder="Email" required>
+            </div>
+
+            <textarea placeholder="Message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+
+    </div>
+</section>
+
+<!-- ================= FOOTER (IDENTIQUE HOME) ================= -->
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+        <!-- Col 1 -->
+        <div class="footer-column footer-brand">
+            <img src="images/logo-pse foot.png" alt="PSE Logo" class="footer-logo">
+            <p>
+                Une expertise reconnue dans la gestion, la protection et la valorisation des espaces naturels.
+            </p>
+        </div>
+
+        <!-- Col 2 -->
         <div class="footer-column">
-            <h4>Sitemap</h4>
+            <h4>Contact</h4>
+            <ul>
+                <li><i class="fas fa-phone"></i> +242 06 873 67 97</li>
+                <li><i class="fas fa-envelope"></i> direction@psenvironment.org</li>
+                <li><i class="fab fa-linkedin"></i> PSEnvironment</li>
+                <li><i class="fab fa-instagram"></i> PS_Environment</li>
+            </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="footer-column">
+            <h4>Navigation</h4>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -135,21 +135,23 @@
             </ul>
         </div>
 
-        <!-- Legal -->
+        <!-- Col 4 -->
         <div class="footer-column">
-            <h4>Informations</h4>
+            <h4>Autres liens</h4>
             <ul>
-                <li><a href="#">Politique de confidentialité</a></li>
-                <li><a href="#">Mentions légales</a></li>
+                <li>Privacy Policy</li>
+                <li>Cookie Policy</li>
+                <li>Site map</li>
             </ul>
         </div>
 
     </div>
 
     <div class="footer-bottom">
-        <p>© 2026 PSE – Performance & Stratégie Environnementale</p>
-        <p>Site conçu avec exigence 🌱</p>
+        <p>© 2026 All Rights Reserved.</p>
+        <p>Website Design and SEO by <span>PSEnvironment</span></p>
     </div>
+
 </footer>
 
 </body>
