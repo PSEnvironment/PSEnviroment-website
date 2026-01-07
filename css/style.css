@@ -1215,3 +1215,94 @@ img,
 .hero-services {
     min-height: 100vh;
 }
+/* ===============================
+   PROCESSUS – 6 ÉTAPES SERVICE
+================================ */
+
+.service-process {
+    background: #cfdcd2; /* identique aux blocs doux du site */
+    padding: 6rem 0;
+}
+
+.process-title {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    color: #2f3a32;
+}
+
+/* GRID */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.8rem;
+}
+
+/* CARD */
+.process-step {
+    background: #3f4642;
+    color: #ffffff;
+    padding: 2.8rem 2rem;
+    position: relative;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NUMÉRO */
+.process-step span {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3.2rem;
+    margin-bottom: 1.2rem;
+    opacity: 0.9;
+}
+
+/* TITRE */
+.process-step h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+/* TEXTE */
+.process-step p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+/* VARIANTE CLAIRE (optionnelle) */
+.process-step.light {
+    background: #ffffff;
+    color: #2f3a32;
+}
+
+.process-step.light h3 {
+    color: #2f3a32;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1200px) {
+    .process-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-title {
+        font-size: 2.4rem;
+    }
+
+    .process-step {
+        min-height: auto;
+    }
+}
