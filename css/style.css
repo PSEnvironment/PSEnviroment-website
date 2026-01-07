@@ -1217,62 +1217,62 @@ img,
 }
 
 /* ===============================
-   PROCESS – STYLE IMAGE 2
+   PROCESS – STYLE IMAGE 2 (COMPACT)
 ================================ */
 
 .process-section {
     background: #cfdcd2;
-    padding: 6rem 8%;
+    padding: 4.5rem 8%;
 }
 
 .process-title {
     text-align: center;
     font-family: 'Libre Baskerville', serif;
-    font-size: 3rem;
+    font-size: 2.6rem;
     color: #3f4642;
-    margin-bottom: 4.5rem;
+    margin-bottom: 3.5rem;
 }
 
 /* GRID */
 .process-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 /* CARD */
 .process-card {
     background: #3f4642;
     color: #ffffff;
-    padding: 3.5rem 2.8rem;
+    padding: 2.4rem 2.2rem;
     position: relative;
-    min-height: 360px;
+    min-height: 280px;
 }
 
 /* NUMÉRO */
 .process-step {
     display: block;
     font-family: 'Libre Baskerville', serif;
-    font-size: 4.5rem;
+    font-size: 3.4rem;
     font-weight: 700;
-    margin-bottom: 2.2rem;
-    opacity: 0.9;
+    margin-bottom: 1.4rem;
+    opacity: 0.85;
 }
 
 /* TITRE */
 .process-card h3 {
     font-family: 'Libre Baskerville', serif;
-    font-size: 1.6rem;
-    margin-bottom: 1.4rem;
+    font-size: 1.35rem;
+    margin-bottom: 0.9rem;
     color: #ffffff;
 }
 
 /* TEXTE */
 .process-card p {
-    font-size: 1rem;
-    line-height: 1.7;
+    font-size: 0.95rem;
+    line-height: 1.45;
     opacity: 0.9;
-    max-width: 95%;
+    max-width: 100%;
 }
 
 /* RESPONSIVE */
@@ -1288,7 +1288,12 @@ img,
     }
 
     .process-title {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
+    }
+
+    .process-card {
+        min-height: auto;
+        padding: 2rem 1.8rem;
     }
 }
 
