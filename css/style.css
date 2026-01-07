@@ -1291,3 +1291,62 @@ img,
         font-size: 2.4rem;
     }
 }
+
+/* ===============================
+   SERVICE BENEFITS (STYLE IMG)
+================================ */
+
+.service-benefits {
+    padding: 6rem 0;
+    background: #ffffff;
+}
+
+.benefits-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #4a4f4b;
+}
+
+/* Grille */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Item */
+.benefit-item h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    color: #2f3a32;
+    text-align: center;
+}
+
+.benefit-item p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .benefits-title {
+        font-size: 2.4rem;
+    }
+
+    .benefit-item h3 {
+        font-size: 1.7rem;
+    }
+}
