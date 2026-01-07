@@ -1215,94 +1215,79 @@ img,
 .hero-services {
     min-height: 100vh;
 }
+
 /* ===============================
-   PROCESSUS – 6 ÉTAPES SERVICE
+   PROCESS – STYLE IMAGE 2
 ================================ */
 
-.service-process {
-    background: #cfdcd2; /* identique aux blocs doux du site */
-    padding: 6rem 0;
+.process-section {
+    background: #cfdcd2;
+    padding: 6rem 8%;
 }
 
 .process-title {
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     font-size: 3rem;
-    margin-bottom: 4rem;
-    color: #2f3a32;
+    color: #3f4642;
+    margin-bottom: 4.5rem;
 }
 
 /* GRID */
 .process-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 1.8rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
 }
 
 /* CARD */
-.process-step {
+.process-card {
     background: #3f4642;
     color: #ffffff;
-    padding: 2.8rem 2rem;
+    padding: 3.5rem 2.8rem;
     position: relative;
     min-height: 360px;
-    display: flex;
-    flex-direction: column;
 }
 
 /* NUMÉRO */
-.process-step span {
+.process-step {
+    display: block;
     font-family: 'Libre Baskerville', serif;
-    font-size: 3.2rem;
-    margin-bottom: 1.2rem;
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 2.2rem;
     opacity: 0.9;
 }
 
 /* TITRE */
-.process-step h3 {
+.process-card h3 {
     font-family: 'Libre Baskerville', serif;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
     color: #ffffff;
 }
 
 /* TEXTE */
-.process-step p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    opacity: 0.85;
+.process-card p {
+    font-size: 1rem;
+    line-height: 1.7;
+    opacity: 0.9;
+    max-width: 95%;
 }
 
-/* VARIANTE CLAIRE (optionnelle) */
-.process-step.light {
-    background: #ffffff;
-    color: #2f3a32;
-}
-
-.process-step.light h3 {
-    color: #2f3a32;
-}
-
-/* ===============================
-   RESPONSIVE
-================================ */
-
-@media (max-width: 1200px) {
+/* RESPONSIVE */
+@media (max-width: 1100px) {
     .process-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .process-grid {
         grid-template-columns: 1fr;
     }
 
     .process-title {
         font-size: 2.4rem;
-    }
-
-    .process-step {
-        min-height: auto;
     }
 }
