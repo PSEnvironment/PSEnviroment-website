@@ -428,3 +428,17 @@
     <p>Website Design and SEO by <span> PSEnvironment</span></p>
   </div>
 </footer>
+
+    <!-- JS MENU MOBILE -->
+    <script>
+        const toggle = document.querySelector('.mobile-menu-toggle');
+        const menu = document.querySelector('.mobile-menu');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            toggle.classList.toggle('open');
+        });
+    </script>
+
+</body>
+</html>
