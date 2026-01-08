@@ -192,14 +192,27 @@
             </ul>
         </div>
 
-        <form class="contact-form">
-            <input type="text" placeholder="Nom">
-            <div class="form-row">
-                <input type="text" placeholder="Téléphone">
-                <input type="email" placeholder="Email">
-            </div>
-            <textarea placeholder="Décrivez votre projet"></textarea>
-            <button type="submit">Envoyer</button>
+        <form 
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="/merci.html"
+          class="contact-form"
+        >
+
+          <!-- Champ caché obligatoire -->
+          <input type="hidden" name="form-name" value="contact">
+
+          <input type="text" name="name" placeholder="Nom" required>
+
+          <div class="form-row">
+            <input type="text" name="phone" placeholder="Téléphone">
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+
+          <textarea name="message" placeholder="Message" required></textarea>
+
+          <button type="submit">Envoyer</button>
         </form>
 
     </div>
