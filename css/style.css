@@ -1485,3 +1485,213 @@ section, header, footer {
 .testimonial-quotes {
     display: none;
 }
+/* ===================================
+   CORRECTIONS RESPONSIVE MOBILE
+=================================== */
+
+/* 1. CORRECTIONS GLOBALES */
+@media (max-width: 768px) {
+    
+    /* Hero - Réduction padding */
+    .hero {
+        padding: 0 4%;
+        min-height: 100vh;
+    }
+    
+    .hero-content {
+        margin-top: 100px;
+        padding: 0 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem; /* au lieu de 3.2rem */
+        line-height: 1.2;
+    }
+    
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* About Intro - Texte plus petit */
+    .about-intro p {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    
+    /* About Split - Passage en 1 colonne */
+    .about-grid-2 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-title {
+        font-size: 2rem;
+    }
+    
+    /* Services Grid - 1 colonne */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .services-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    /* Testimonial - Guillemets cachés + padding réduit */
+    .testimonial-section {
+        padding: 3rem 4%;
+    }
+    
+    .testimonial-quotes {
+        display: none; /* CRITIQUE : empêche débordement */
+    }
+    
+    .testimonial-text {
+        font-size: 1.2rem;
+    }
+    
+    /* Contact Grid - 1 colonne */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-info h2 {
+        font-size: 2.2rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    /* Comments Grid - 1 colonne */
+    .comments-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .comments-title {
+        font-size: 2rem;
+    }
+    
+    .comment-text {
+        font-size: 1.15rem;
+    }
+    
+    /* Footer - 2 colonnes puis 1 */
+    .footer-inner {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 40px 4%;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+        padding: 14px 4%;
+    }
+    
+    /* Process Grid - 1 colonne */
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .process-title {
+        font-size: 2rem;
+    }
+    
+    /* Benefits Grid - 1 colonne */
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .benefits-title {
+        font-size: 2rem;
+    }
+    
+    /* About Grid - 1 colonne */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    /* Service Block - Stack vertical */
+    .service-block-content,
+    .service-block-content.reverse {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    /* Reasons Grid - 1 colonne */
+    .reasons-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 2. TRÈS PETITS ÉCRANS (< 480px) */
+@media (max-width: 480px) {
+    
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+    
+    .about-intro p {
+        font-size: 1rem;
+    }
+    
+    .testimonial-text {
+        font-size: 1.05rem;
+    }
+    
+    .contact-info h2 {
+        font-size: 1.8rem;
+    }
+    
+    .comments-title,
+    .benefits-title,
+    .process-title {
+        font-size: 1.6rem;
+    }
+    
+    .footer-inner {
+        grid-template-columns: 1fr;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* 3. TABLETTES (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .comments-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
