@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>PSE — Nos Services</title>
-    <meta name="description" content="Découvrez l’ensemble des services professionnels proposés par PSE pour la protection et la valorisation durable de l’environnement.">
+    <meta name="description" content="Découvrez l'ensemble des services professionnels proposés par PSE pour la protection et la valorisation durable de l'environnement.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,6 +35,20 @@
             </a>
         </div>
 
+        <!-- Burger mobile -->
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="mobile-menu">
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">À propos</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
         <div class="hero-links">
             <a href="index.html">Accueil</a>
             <a href="services.html" class="active">Services</a>
@@ -57,7 +71,7 @@
 
         <p>
             Les services de PSE traduisent notre volonté de préserver, protéger et valoriser
-            durablement les biens et espaces naturels. De l’entretien spécialisé aux
+            durablement les biens et espaces naturels. De l'entretien spécialisé aux
             interventions ciblées lorsque nécessaire, nous proposons des solutions
             responsables, adaptées aux réalités de chaque site et de chaque écosystème.
         </p>
@@ -65,77 +79,130 @@
 
 </section>
 
-<!-- ================= SERVICES GRID ================= -->
-<section class="section services-section bg-light">
+<!-- ================= SERVICES LISTE VERTICALE ================= -->
+<section class="section services-page-content">
     <div class="container">
 
+        <!-- Header section -->
         <div class="services-top">
             <div class="services-text">
                 <h2>Nos expertises</h2>
                 <p>
                     Une approche globale et durable pour répondre aux enjeux environnementaux
-                    d’aujourd’hui et de demain.
+                    d'aujourd'hui et de demain.
                 </p>
             </div>
         </div>
 
-        <div class="services-grid">
-
-            <div class="service-card">
-                <img src="images/jardins.jpg" alt="Jardins urbains">
-                <div class="service-content">
+        <!-- SERVICE 1 : Image à GAUCHE -->
+        <div class="service-block">
+            <div class="service-block-content">
+                <div class="service-img">
+                    <img src="images/jardins.jpg" alt="Jardins urbains">
+                </div>
+                <div class="service-text">
                     <h3>Jardins urbains</h3>
-                    <p>Création, aménagement et entretien d’espaces verts durables.</p>
-                    <a href="jardins-urbains.html" class="btn-outline">En savoir plus</a>
+                    <p>
+                        Création, aménagement et entretien d'espaces verts durables. 
+                        Nous concevons des jardins urbains qui allient esthétique et respect 
+                        de l'environnement, en privilégiant des espèces locales et des 
+                        pratiques d'entretien écologiques.
+                    </p>
+                    <a href="jardins-urbains.html" class="btn btn-outline">En savoir plus</a>
                 </div>
             </div>
-
-            <div class="service-card">
-                <img src="images/agroecologie.jpg" alt="Agroécologie">
-                <div class="service-content">
-                    <h3>Agroécologie</h3>
-                    <p>Potagers urbains, compostage et pratiques agricoles responsables.</p>
-                    <a href="agroecologie.html" class="btn-outline">En savoir plus</a>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <img src="images/arbres.jpg" alt="Service des arbres">
-                <div class="service-content">
-                    <h3>Service des arbres</h3>
-                    <p>Diagnostic, taille raisonnée et gestion du patrimoine arboré.</p>
-                    <a href="service-des-arbres.html" class="btn-outline">En savoir plus</a>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <img src="images/paysagisme.jpg" alt="Paysagisme">
-                <div class="service-content">
-                    <h3>Paysagisme</h3>
-                    <p>Conception et entretien de paysages respectueux de l’environnement.</p>
-                    <a href="paysagisme.html" class="btn-outline">En savoir plus</a>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <img src="images/upcycling.jpg" alt="Produits écologiques">
-                <div class="service-content">
-                    <h3>Produits écologiques</h3>
-                    <p>Upcycling, objets durables et solutions responsables.</p>
-                    <a href="produits-ecologiques.html" class="btn-outline">En savoir plus</a>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <img src="images/formation.jpg" alt="Formation & normes">
-                <div class="service-content">
-                    <h3>Formation & normes</h3>
-                    <p>ISO, analyse des risques et accompagnement environnemental.</p>
-                    <a href="formation-normes.html" class="btn-outline">En savoir plus</a>
-                </div>
-            </div>
-
         </div>
+
+        <!-- SERVICE 2 : Image à DROITE -->
+        <div class="service-block">
+            <div class="service-block-content reverse">
+                <div class="service-img">
+                    <img src="images/agroecologie.jpg" alt="Agroécologie">
+                </div>
+                <div class="service-text">
+                    <h3>Agroécologie</h3>
+                    <p>
+                        Potagers urbains, compostage et pratiques agricoles responsables. 
+                        Nous accompagnons la mise en place de systèmes de production alimentaire 
+                        durable en milieu urbain, avec une approche pédagogique et participative.
+                    </p>
+                    <a href="agroecologie.html" class="btn btn-outline">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICE 3 : Image à GAUCHE -->
+        <div class="service-block">
+            <div class="service-block-content">
+                <div class="service-img">
+                    <img src="images/arbres.jpg" alt="Service des arbres">
+                </div>
+                <div class="service-text">
+                    <h3>Service des arbres</h3>
+                    <p>
+                        Diagnostic, taille raisonnée et gestion du patrimoine arboré. 
+                        Nos arboristes qualifiés assurent la santé et la sécurité de vos arbres 
+                        tout en préservant leur valeur écologique et patrimoniale.
+                    </p>
+                    <a href="service-des-arbres.html" class="btn btn-outline">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICE 4 : Image à DROITE -->
+        <div class="service-block">
+            <div class="service-block-content reverse">
+                <div class="service-img">
+                    <img src="images/paysagisme.jpg" alt="Paysagisme">
+                </div>
+                <div class="service-text">
+                    <h3>Paysagisme</h3>
+                    <p>
+                        Conception et entretien de paysages respectueux de l'environnement. 
+                        Nous créons des aménagements paysagers durables qui s'intègrent 
+                        harmonieusement dans leur contexte et favorisent la biodiversité.
+                    </p>
+                    <a href="paysagisme.html" class="btn btn-outline">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICE 5 : Image à GAUCHE -->
+        <div class="service-block">
+            <div class="service-block-content">
+                <div class="service-img">
+                    <img src="images/upcycling.jpg" alt="Produits écologiques">
+                </div>
+                <div class="service-text">
+                    <h3>Produits écologiques</h3>
+                    <p>
+                        Upcycling, objets durables et solutions responsables. 
+                        Nous valorisons les matériaux de récupération pour créer des produits 
+                        uniques et écologiques, réduisant ainsi l'empreinte environnementale.
+                    </p>
+                    <a href="produits-ecologiques.html" class="btn btn-outline">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICE 6 : Image à DROITE -->
+        <div class="service-block">
+            <div class="service-block-content reverse">
+                <div class="service-img">
+                    <img src="images/formation.jpg" alt="Formation & normes">
+                </div>
+                <div class="service-text">
+                    <h3>Formation & normes</h3>
+                    <p>
+                        ISO, analyse des risques et accompagnement environnemental. 
+                        Nous formons vos équipes aux meilleures pratiques environnementales 
+                        et vous accompagnons dans la mise en conformité avec les normes et réglementations.
+                    </p>
+                    <a href="formation-normes.html" class="btn btn-outline">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
 
@@ -189,6 +256,17 @@
     </div>
 
 </footer>
+
+<!-- JS MENU MOBILE -->
+<script>
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    const menu = document.querySelector('.mobile-menu');
+
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        toggle.classList.toggle('open');
+    });
+</script>
 
 </body>
 </html>
